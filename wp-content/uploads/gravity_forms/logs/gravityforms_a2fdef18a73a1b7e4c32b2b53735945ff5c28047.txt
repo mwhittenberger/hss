@@ -1,0 +1,359 @@
+2020-03-18 23:34:58.220139 - DEBUG --> GFCommon::post_to_manager(): endpoint: https://www.gravityhelp.com/wp-content/plugins/gravitymanager/message.php?of=GravityForms&key=&v=2.4.11.1&wp=5.3.2&php=7.4.3&mysql=5.7.28&version=2 
+2020-03-18 23:35:01.734602 - ERROR --> GFCommon::log_remote_response(): WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 28: Resolving timed out after 3510 milliseconds
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+ 
+2020-03-18 23:35:01.734718 - ERROR --> GFCommon::post_to_manager(): Error from manager. Sending to proxy... 
+2020-03-18 23:35:05.247652 - ERROR --> GFCommon::log_remote_response(): WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 28: Resolving timed out after 3513 milliseconds
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+ 
+2020-03-18 23:35:05.253964 - DEBUG --> GFCommon::post_to_manager(): endpoint: https://www.gravityhelp.com/wp-content/plugins/gravitymanager/version.php?nocache=1 
+2020-03-18 23:35:05.790230 - DEBUG --> GFCommon::log_remote_response(): code: 200; body: {"is_valid_key":"0","expiration_time":0,"version":"1.7.9","url":"","offerings":[]} 
+2020-03-18 23:35:06.551402 - DEBUG --> GFCommon::post_to_manager(): endpoint: https://www.gravityhelp.com/wp-content/plugins/gravitymanager/api.php?op=upgrade_message&key= 
+2020-03-18 23:35:06.655199 - DEBUG --> GFCommon::log_remote_response(): code: 200; body:  
+2020-03-18 23:35:20.061299 - DEBUG --> GFFormDisplay::process_form(): Starting to process form (#1) submission. 
+2020-03-18 23:35:20.063606 - DEBUG --> GFFormDisplay::process_form(): Source page number: 1. Target page number: 0. 
+2020-03-18 23:35:20.064462 - DEBUG --> GFFormDisplay::process_form(): After validation. Is submission valid? Yes. 
+2020-03-18 23:35:20.064554 - DEBUG --> GFFormDisplay::process_form(): Submission is valid. Moving forward. 
+2020-03-18 23:35:20.064636 - DEBUG --> GFFormsModel::save_entry(): Saving entry. 
+2020-03-18 23:35:20.067151 - DEBUG --> GFFormsModel::save_entry(): Entry record created in the database. ID: 13. 
+2020-03-18 23:35:20.067673 - DEBUG --> GFFormsModel::save_entry(): Saving entry fields. 
+2020-03-18 23:35:20.067815 - DEBUG --> GFFormsModel::queue_save_input_value(): Queued field operation: First Name(#1 - text). 
+2020-03-18 23:35:20.067908 - DEBUG --> GFFormsModel::queue_save_input_value(): Queued field operation: Last Name(#2 - text). 
+2020-03-18 23:35:20.068007 - DEBUG --> GFFormsModel::queue_save_input_value(): Queued field operation: Phone(#3 - phone). 
+2020-03-18 23:35:20.068097 - DEBUG --> GFFormsModel::queue_save_input_value(): Queued field operation: Email(#4 - email). 
+2020-03-18 23:35:20.068183 - DEBUG --> GFFormsModel::queue_save_input_value(): Queued field operation: City(#9 - text). 
+2020-03-18 23:35:20.068274 - DEBUG --> GFFormsModel::queue_save_input_value(): Queued field operation: State(#10 - select). 
+2020-03-18 23:35:20.068361 - DEBUG --> GFFormsModel::queue_save_input_value(): Queued field operation: Zip Code(#7 - text). 
+2020-03-18 23:35:20.068546 - DEBUG --> GFFormsModel::queue_save_input_value(): Queued field operation: Opt-In(#8.1 - checkbox). 
+2020-03-18 23:35:20.080359 - DEBUG --> GFFormsModel::save_entry(): Finished saving entry fields. 
+2020-03-18 23:35:20.080478 - DEBUG --> GF_Background_Process::dispatch(): Running for gf_feed_processor. 
+2020-03-18 23:35:20.081022 - DEBUG --> GF_Background_Process::dispatch(): Unable to dispatch tasks to Admin Ajax: Nothing left to process 
+2020-03-18 23:35:20.081094 - DEBUG --> GFFormsModel::create_post(): Starting. 
+2020-03-18 23:35:20.081191 - DEBUG --> GFFormsModel::create_post(): Stopping. The form doesn't have any post fields. 
+2020-03-18 23:35:20.081249 - DEBUG --> GFAPI::send_notifications(): Gathering notifications for form_submission event for entry #13. 
+2020-03-18 23:35:20.081311 - DEBUG --> GFCommon::send_notifications(): Processing notifications for form_submission event for entry #13: Array
+(
+    [0] => 5e44cbdb91fab
+)
+
+(only active/applicable notifications are sent) 
+2020-03-18 23:35:20.081398 - DEBUG --> GFCommon::send_notification(): Starting to process notification (#5e44cbdb91fab - Admin Notification). 
+2020-03-18 23:35:20.082978 - DEBUG --> GFCommon::send_email(): Sending email via wp_mail(). 
+2020-03-18 23:35:20.083058 - DEBUG --> Array
+(
+    [to] => mwhittenberger@yahoo.com
+    [subject] => New submission from Lead Capture
+    [message] => <html>
+	<head>
+		<title>New submission from Lead Capture</title>
+	</head>
+	<body>
+		<table width="99%" border="0" cellpadding="1" cellspacing="0" bgcolor="#EAEAEA"><tr><td>
+                            <table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#FFFFFF">
+                            <tr bgcolor="#EAF2FA">
+		                                    <td colspan="2">
+		                                        <font style="font-family: sans-serif; font-size:12px;"><strong>First Name</strong></font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#FFFFFF">
+		                                    <td width="20">&nbsp;</td>
+		                                    <td>
+		                                        <font style="font-family: sans-serif; font-size:12px;">Michael</font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#EAF2FA">
+		                                    <td colspan="2">
+		                                        <font style="font-family: sans-serif; font-size:12px;"><strong>Last Name</strong></font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#FFFFFF">
+		                                    <td width="20">&nbsp;</td>
+		                                    <td>
+		                                        <font style="font-family: sans-serif; font-size:12px;">Whittenberger</font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#EAF2FA">
+		                                    <td colspan="2">
+		                                        <font style="font-family: sans-serif; font-size:12px;"><strong>Phone</strong></font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#FFFFFF">
+		                                    <td width="20">&nbsp;</td>
+		                                    <td>
+		                                        <font style="font-family: sans-serif; font-size:12px;">(646) 530-1840</font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#EAF2FA">
+		                                    <td colspan="2">
+		                                        <font style="font-family: sans-serif; font-size:12px;"><strong>Email</strong></font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#FFFFFF">
+		                                    <td width="20">&nbsp;</td>
+		                                    <td>
+		                                        <font style="font-family: sans-serif; font-size:12px;"><a href='mailto:mike@panempire.com'>mike@panempire.com</a></font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#EAF2FA">
+		                                    <td colspan="2">
+		                                        <font style="font-family: sans-serif; font-size:12px;"><strong>City</strong></font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#FFFFFF">
+		                                    <td width="20">&nbsp;</td>
+		                                    <td>
+		                                        <font style="font-family: sans-serif; font-size:12px;">Fort Lauderdale</font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#EAF2FA">
+		                                    <td colspan="2">
+		                                        <font style="font-family: sans-serif; font-size:12px;"><strong>State</strong></font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#FFFFFF">
+		                                    <td width="20">&nbsp;</td>
+		                                    <td>
+		                                        <font style="font-family: sans-serif; font-size:12px;">Florida</font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#EAF2FA">
+		                                    <td colspan="2">
+		                                        <font style="font-family: sans-serif; font-size:12px;"><strong>Zip Code</strong></font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#FFFFFF">
+		                                    <td width="20">&nbsp;</td>
+		                                    <td>
+		                                        <font style="font-family: sans-serif; font-size:12px;">33312</font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#EAF2FA">
+		                                    <td colspan="2">
+		                                        <font style="font-family: sans-serif; font-size:12px;"><strong>Opt-In</strong></font>
+		                                    </td>
+		                               </tr>
+		                               <tr bgcolor="#FFFFFF">
+		                                    <td width="20">&nbsp;</td>
+		                                    <td>
+		                                        <font style="font-family: sans-serif; font-size:12px;"><ul class='bulleted'><li>By checking this box and submitting this form, I authorize Brinks, ADT LLC, Protect Your Home, Core Home Security, Vivint, American Defense Systems, and U.S. Home Alarm to use automated technology to call or text my phone number (provided above) for marketing purposes. I may revoke this consent at any time. I understand that my authorization to receive calls and texts via automated technology is not a condition of purchasing of any goods or services. Text message frequency varies, average of X messages per month. Msg &amp; data rates may apply. Reply STOP to XXXXX to cancel. Reply HELP to XXXXX for assistance.</li></ul></font>
+		                                    </td>
+		                               </tr>
+		                               </table>
+                        </td>
+                   </tr>
+               </table>
+	</body>
+</html>
+    [headers] => Array
+        (
+            [From] => From: "mwhittenberger@yahoo.com" <mwhittenberger@yahoo.com>
+            [Content-type] => Content-type: text/html; charset=UTF-8
+        )
+
+    [attachments] => Array
+        (
+        )
+
+    [abort_email] => 
+)
+ 
+2020-03-18 23:35:20.135287 - DEBUG --> GFCommon::send_email(): Result from wp_mail(): 1 
+2020-03-18 23:35:20.135469 - DEBUG --> GFCommon::send_email(): WordPress successfully passed the notification email (#5e44cbdb91fab - Admin Notification) for entry #13 to the sending server. 
+2020-03-18 23:35:20.137976 - DEBUG --> GFFormDisplay::handle_confirmation(): Sending confirmation. 
+2020-03-18 23:35:20.138973 - DEBUG --> GFFormDisplay::handle_confirmation(): Confirmation => <script type="text/javascript"> function gformRedirect(){document.location.href="http:\/\/hss.panempire.com\/thank-you\/";}</script> 
+2020-03-18 23:35:20.139059 - DEBUG --> GFFormDisplay::process_form(): Executing functions hooked to gform_after_submission. 
+2020-03-18 23:35:20.140039 - DEBUG --> gform_after_submission: body => https://www.nativemediacrm.com/api/post_lead.php?api_key=b1578c1b-57c1-40f5-b334-68ff4c6c83b9&Five9list=LISTNAME&number1=(646) 530-1840&first_name=Michael&last_name=33312&city=33312&state=FL&zip=33312&email=mike@panempire.com&IP=73.139.44.52&Time_Stamp=3/18/2020 11:35:20 PM&LeadID_Token=344555555&Source_URL=http://homesecuritysystems.deals&ANI_Number=344566666&Source_ID=esddttrrre 
+2020-03-18 23:35:20.809715 - DEBUG --> gform_after_submission: response => Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Wed, 18 Mar 2020 23:35:20 GMT
+                    [server] => Apache/2.4.18 (Ubuntu)
+                    [expires] => Mon, 26 Jul 1997 05:00:00 GMT
+                    [last-modified] => Wed, 18 Mar 2020 23:35:20 GMT
+                    [cache-control] => no-cache, must-revalidate
+                    [pragma] => no-cache
+                    [vary] => Accept-Encoding
+                    [content-encoding] => gzip
+                    [content-length] => 120
+                    [content-type] => text/html; charset=windows-1252
+                )
+
+        )
+
+    [body] => <?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://tempuri.org/">Lead not found</string>SUCCESS
+    [response] => Array
+        (
+            [code] => 200
+            [message] => OK
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => <?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://tempuri.org/">Lead not found</string>SUCCESS
+                    [raw] => HTTP/1.1 200 OK
+Date: Wed, 18 Mar 2020 23:35:20 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Last-Modified: Wed, 18 Mar 2020 23:35:20 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 120
+Connection: close
+Content-Type: text/html; charset=windows-1252
+
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://tempuri.org/">Lead not found</string>SUCCESS
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Array
+                                        (
+                                            [0] => Wed, 18 Mar 2020 23:35:20 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => Apache/2.4.18 (Ubuntu)
+                                        )
+
+                                    [expires] => Array
+                                        (
+                                            [0] => Mon, 26 Jul 1997 05:00:00 GMT
+                                        )
+
+                                    [last-modified] => Array
+                                        (
+                                            [0] => Wed, 18 Mar 2020 23:35:20 GMT
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => no-cache, must-revalidate
+                                        )
+
+                                    [pragma] => Array
+                                        (
+                                            [0] => no-cache
+                                        )
+
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                        )
+
+                                    [content-encoding] => Array
+                                        (
+                                            [0] => gzip
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 120
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => text/html; charset=windows-1252
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 200
+                    [protocol_version] => 1.1
+                    [success] => 1
+                    [redirects] => 0
+                    [url] => https://www.nativemediacrm.com/api/post_lead.php?api_key=b1578c1b-57c1-40f5-b334-68ff4c6c83b9&Five9list=LISTNAME&number1=(646)%20530-1840&first_name=Michael&last_name=33312&city=33312&state=FL&zip=33312&email=mike@panempire.com&IP=73.139.44.52&Time_Stamp=3/18/2020%2011:35:20%20PM&LeadID_Token=344555555&Source_URL=http://homesecuritysystems.deals&ANI_Number=344566666&Source_ID=esddttrrre
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+ 
+2020-03-18 23:37:06.233237 - DEBUG --> GFCommon::post_to_manager(): endpoint: https://www.gravityhelp.com/wp-content/plugins/gravitymanager/api.php?op=upgrade_message&key= 
+2020-03-18 23:37:09.749850 - ERROR --> GFCommon::log_remote_response(): WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 28: Resolving timed out after 3512 milliseconds
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+ 
+2020-03-18 23:37:09.749975 - ERROR --> GFCommon::post_to_manager(): Error from manager. Sending to proxy... 
+2020-03-18 23:37:10.864478 - DEBUG --> GFCommon::log_remote_response(): code: 200; body: <html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+ 
