@@ -13,7 +13,7 @@
         <div class="footer-logo-column">
 
             <div class="footer-copyright">
-                Copyright &copy; <?php echo date('Y'); ?> Home Security System Deals. All Rights Reserved.
+                Copyright &copy; <?php echo date('Y'); ?> Home Security System Deals. All Rights Reserved. <a href="/thank-you/"></a>
             </div>
         </div>
 

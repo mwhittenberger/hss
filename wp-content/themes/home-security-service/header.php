@@ -56,7 +56,7 @@
                     <div class="logos-wrapper">
                         <div><img src="/wp-content/uploads/2020/02/adt-security-services-logo-white.png" alt="ADT Home Security Services"></div>
                         <div><img src="/wp-content/uploads/2020/02/new-vivint-logo-white.png" alt="Vivint Security Services"></div>
-                        <div><img src="/wp-content/uploads/2020/02/Security-Flip@3x-white.png" alt="Safe Home Security"></div>
+
                         <div><img src="/wp-content/uploads/2020/02/brinks-security-logo-no-backg-white.png" alt="Brinks Home Security Services"></div>
                         <div><img src="/wp-content/uploads/2020/03/CoreHome-50h-2.png" alt="Core Home Security"></div>
                     </div>
