@@ -68,7 +68,7 @@
 
                 <ul>
                     <li><span>Offers you won't find anywhere else on Home Security</span></li>
-                    <li><span>Get Home Owner Discounts with Active Alarm Security</span></li>
+                    <li><span>Possible Home Owner Discounts with Active Alarm Security</span></li>
                     <li><span>Customize your Security System</span></li>
                 </ul>
             </div>
